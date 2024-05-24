@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.23.0](https://github.com/ZzEeKkAa/numba-dpex/compare/0.22.1...v0.23.0) (2024-05-24)
+
+
+### Bug Fixes
+
+* update cmake with_soapi arg ([39dfd18](https://github.com/ZzEeKkAa/numba-dpex/commit/39dfd18c3f7b46a4981dba35fe8b1ec0c02e8542))
+* use proper naming for rt library ([ff8f262](https://github.com/ZzEeKkAa/numba-dpex/commit/ff8f262419b5a4f833d44f7128d7df5ae5cd1b75))
+
 ## [0.23.0] - 2024-04-XX
 
 ### Fixed
