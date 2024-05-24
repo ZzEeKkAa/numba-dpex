@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" />
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGGL0NJK6P"></script>
     <script>
@@ -10,587 +11,437 @@
         gtag('js', new Date());
         gtag('config', 'G-LGGL0NJK6P');
     </script>
+    <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 --><title>Python Module Index - numba-dpex 0+untagged.2094.gf703390 documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=387cc868" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
     
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Python Module Index &mdash; numba-dpex 0+untagged.1254.gbb877f4 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
- 
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" /
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
 
-</head>
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="index.html" class="icon icon-home">
-            numba-dpex
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Core Features</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="CoreFeatures.html">Code-generation based on a device</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CoreFeatures.html#automatic-offload-of-numpy-expressions">Automatic offload of NumPy expressions</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">User Guides</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="user_guides/getting_started.html"> Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_guides/kernel_programming_guide/index.html"> Direct kernel programming</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_guides/debugging/index.html"> Debugging with GDB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_guides/docker.html"> Docker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_guides/migrating_from_numba_cuda.html"> numba-dpex for numba.cuda Programmers</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Developer Guides</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="developer_guides/dpnp_integration.html">dpnp integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developer_guides/tools.html">Debugging the compilation pipeline</a></li>
-</ul>
-
-        </div>
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">numba-dpex 0+untagged.2094.gf703390 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
       </div>
-    </nav>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">numba-dpex 0+untagged.2094.gf703390 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming_model.html">Programming Model</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="user_guide/index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/kernel_programming/index.html">Kernel Programming</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="user_guide/debugging/index.html">Debugging with Intel® Distribution for GDB*</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Debugging with Intel® Distribution for GDB*</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/debugging/set_up_machine.html">Set up the machine for debugging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/debugging/debugging_environment.html">Configure debugging environment</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="user_guide/debugging/features.html">Supported Features</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Supported Features</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/breakpoints.html">Breakpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/stepping.html">Stepping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/frame_info.html">Information About a Frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/backtrace.html">Backtrace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/data.html">Examining Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/symbols.html">Examining the Symbol Table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/altering.html">Altering Execution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/local_variables.html">Debugging Local Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/debugging/numba-0.55.html">Debugging Features in Numba 0.55</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/debugging/limitations.html">Limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/debugging/common_issues.html">Common issues and tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="autoapi/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/numba_dpex/kernel_api/index.html">numba_dpex.kernel_api</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="config_options.html">Configuration Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_sycl_features.html">SYCL* and numba-dpex Feature Comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="experimental/index.html">Experimental Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="useful_links.html">Useful links</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release-notes.html">Release Notes</a></li>
+</ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">numba-dpex</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Python Module Index</li>
-      <li class="wy-breadcrumbs-aside">
-      </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+</div>
 
-   <h1>Python Module Index</h1>
-
-   <div class="modindex-jumpbox">
-   <a href="#cap-c"><strong>c</strong></a> | 
-   <a href="#cap-d"><strong>d</strong></a> | 
-   <a href="#cap-n"><strong>n</strong></a> | 
-   <a href="#cap-o"><strong>o</strong></a> | 
-   <a href="#cap-p"><strong>p</strong></a> | 
-   <a href="#cap-s"><strong>s</strong></a> | 
-   <a href="#cap-u"><strong>u</strong></a> | 
-   <a href="#cap-v"><strong>v</strong></a>
-   </div>
-
-   <table class="indextable modindextable">
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-c"><td></td><td>
-       <strong>c</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.config.html#module-numba_dpex.config"><code class="xref">numba_dpex.config</code></a></td><td>
-       <em></em></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-1" style="display: none" alt="-" /></td>
-       <td>
-       <a href="apidoc/numba_dpex.core.html#module-numba_dpex.core"><code class="xref">numba_dpex.core</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.caching.html#module-numba_dpex.core.caching"><code class="xref">numba_dpex.core.caching</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.codegen.html#module-numba_dpex.core.codegen"><code class="xref">numba_dpex.core.codegen</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.compiler.html#module-numba_dpex.core.compiler"><code class="xref">numba_dpex.core.compiler</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.datamodel.html#module-numba_dpex.core.datamodel"><code class="xref">numba_dpex.core.datamodel</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.datamodel.models.html#module-numba_dpex.core.datamodel.models"><code class="xref">numba_dpex.core.datamodel.models</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.descriptor.html#module-numba_dpex.core.descriptor"><code class="xref">numba_dpex.core.descriptor</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.dpjit_dispatcher.html#module-numba_dpex.core.dpjit_dispatcher"><code class="xref">numba_dpex.core.dpjit_dispatcher</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.exceptions.html#module-numba_dpex.core.exceptions"><code class="xref">numba_dpex.core.exceptions</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.itanium_mangler.html#module-numba_dpex.core.itanium_mangler"><code class="xref">numba_dpex.core.itanium_mangler</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.html#module-numba_dpex.core.kernel_interface"><code class="xref">numba_dpex.core.kernel_interface</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.arg_pack_unpacker.html#module-numba_dpex.core.kernel_interface.arg_pack_unpacker"><code class="xref">numba_dpex.core.kernel_interface.arg_pack_unpacker</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.dispatcher.html#module-numba_dpex.core.kernel_interface.dispatcher"><code class="xref">numba_dpex.core.kernel_interface.dispatcher</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.func.html#module-numba_dpex.core.kernel_interface.func"><code class="xref">numba_dpex.core.kernel_interface.func</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.indexers.html#module-numba_dpex.core.kernel_interface.indexers"><code class="xref">numba_dpex.core.kernel_interface.indexers</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.kernel_base.html#module-numba_dpex.core.kernel_interface.kernel_base"><code class="xref">numba_dpex.core.kernel_interface.kernel_base</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.spirv_kernel.html#module-numba_dpex.core.kernel_interface.spirv_kernel"><code class="xref">numba_dpex.core.kernel_interface.spirv_kernel</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.kernel_interface.utils.html#module-numba_dpex.core.kernel_interface.utils"><code class="xref">numba_dpex.core.kernel_interface.utils</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.parfors.html#module-numba_dpex.core.parfors"><code class="xref">numba_dpex.core.parfors</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.parfors.kernel_builder.html#module-numba_dpex.core.parfors.kernel_builder"><code class="xref">numba_dpex.core.parfors.kernel_builder</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.parfors.parfor_lowerer.html#module-numba_dpex.core.parfors.parfor_lowerer"><code class="xref">numba_dpex.core.parfors.parfor_lowerer</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.parfors.reduction_helper.html#module-numba_dpex.core.parfors.reduction_helper"><code class="xref">numba_dpex.core.parfors.reduction_helper</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.parfors.reduction_kernel_builder.html#module-numba_dpex.core.parfors.reduction_kernel_builder"><code class="xref">numba_dpex.core.parfors.reduction_kernel_builder</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.passes.html#module-numba_dpex.core.passes"><code class="xref">numba_dpex.core.passes</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.passes.dufunc_inliner.html#module-numba_dpex.core.passes.dufunc_inliner"><code class="xref">numba_dpex.core.passes.dufunc_inliner</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.passes.parfor_legalize_cfd_pass.html#module-numba_dpex.core.passes.parfor_legalize_cfd_pass"><code class="xref">numba_dpex.core.passes.parfor_legalize_cfd_pass</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.passes.passes.html#module-numba_dpex.core.passes.passes"><code class="xref">numba_dpex.core.passes.passes</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.pipelines.html#module-numba_dpex.core.pipelines"><code class="xref">numba_dpex.core.pipelines</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.pipelines.dpjit_compiler.html#module-numba_dpex.core.pipelines.dpjit_compiler"><code class="xref">numba_dpex.core.pipelines.dpjit_compiler</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.pipelines.kernel_compiler.html#module-numba_dpex.core.pipelines.kernel_compiler"><code class="xref">numba_dpex.core.pipelines.kernel_compiler</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.runtime.html#module-numba_dpex.core.runtime"><code class="xref">numba_dpex.core.runtime</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.runtime.context.html#module-numba_dpex.core.runtime.context"><code class="xref">numba_dpex.core.runtime.context</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.targets.html#module-numba_dpex.core.targets"><code class="xref">numba_dpex.core.targets</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.targets.dpjit_target.html#module-numba_dpex.core.targets.dpjit_target"><code class="xref">numba_dpex.core.targets.dpjit_target</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.targets.kernel_target.html#module-numba_dpex.core.targets.kernel_target"><code class="xref">numba_dpex.core.targets.kernel_target</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.typeconv.html#module-numba_dpex.core.typeconv"><code class="xref">numba_dpex.core.typeconv</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.typeconv.array_conversion.html#module-numba_dpex.core.typeconv.array_conversion"><code class="xref">numba_dpex.core.typeconv.array_conversion</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.types.html#module-numba_dpex.core.types"><code class="xref">numba_dpex.core.types</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.types.array_type.html#module-numba_dpex.core.types.array_type"><code class="xref">numba_dpex.core.types.array_type</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.types.dpctl_types.html#module-numba_dpex.core.types.dpctl_types"><code class="xref">numba_dpex.core.types.dpctl_types</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.types.dpnp_ndarray_type.html#module-numba_dpex.core.types.dpnp_ndarray_type"><code class="xref">numba_dpex.core.types.dpnp_ndarray_type</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.types.numba_types_short_names.html#module-numba_dpex.core.types.numba_types_short_names"><code class="xref">numba_dpex.core.types.numba_types_short_names</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.types.usm_ndarray_type.html#module-numba_dpex.core.types.usm_ndarray_type"><code class="xref">numba_dpex.core.types.usm_ndarray_type</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.typing.html#module-numba_dpex.core.typing"><code class="xref">numba_dpex.core.typing</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.typing.dpnpdecl.html#module-numba_dpex.core.typing.dpnpdecl"><code class="xref">numba_dpex.core.typing.dpnpdecl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.typing.typeof.html#module-numba_dpex.core.typing.typeof"><code class="xref">numba_dpex.core.typing.typeof</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.html#module-numba_dpex.core.utils"><code class="xref">numba_dpex.core.utils</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.caching_utils.html#module-numba_dpex.core.utils.caching_utils"><code class="xref">numba_dpex.core.utils.caching_utils</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.kernel_launcher.html#module-numba_dpex.core.utils.kernel_launcher"><code class="xref">numba_dpex.core.utils.kernel_launcher</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.kernel_templates.html#module-numba_dpex.core.utils.kernel_templates"><code class="xref">numba_dpex.core.utils.kernel_templates</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.kernel_templates.kernel_template_iface.html#module-numba_dpex.core.utils.kernel_templates.kernel_template_iface"><code class="xref">numba_dpex.core.utils.kernel_templates.kernel_template_iface</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.kernel_templates.range_kernel_template.html#module-numba_dpex.core.utils.kernel_templates.range_kernel_template"><code class="xref">numba_dpex.core.utils.kernel_templates.range_kernel_template</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.kernel_templates.reduction_template.html#module-numba_dpex.core.utils.kernel_templates.reduction_template"><code class="xref">numba_dpex.core.utils.kernel_templates.reduction_template</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.core.utils.suai_helper.html#module-numba_dpex.core.utils.suai_helper"><code class="xref">numba_dpex.core.utils.suai_helper</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-d"><td></td><td>
-       <strong>d</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.decorators.html#module-numba_dpex.decorators"><code class="xref">numba_dpex.decorators</code></a></td><td>
-       <em></em></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-2" style="display: none" alt="-" /></td>
-       <td>
-       <a href="apidoc/numba_dpex.dpctl_iface.html#module-numba_dpex.dpctl_iface"><code class="xref">numba_dpex.dpctl_iface</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-2">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.dpctl_iface.dpctl_capi_fn_builder.html#module-numba_dpex.dpctl_iface.dpctl_capi_fn_builder"><code class="xref">numba_dpex.dpctl_iface.dpctl_capi_fn_builder</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-2">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.dpctl_iface.dpctl_function_types.html#module-numba_dpex.dpctl_iface.dpctl_function_types"><code class="xref">numba_dpex.dpctl_iface.dpctl_function_types</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-2">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.dpctl_iface.legacy_kernel_launch_ops.html#module-numba_dpex.dpctl_iface.legacy_kernel_launch_ops"><code class="xref">numba_dpex.dpctl_iface.legacy_kernel_launch_ops</code></a></td><td>
-       <em></em></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-3" style="display: none" alt="-" /></td>
-       <td>
-       <a href="apidoc/numba_dpex.dpnp_iface.html#module-numba_dpex.dpnp_iface"><code class="xref">numba_dpex.dpnp_iface</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-3">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.dpnp_iface.arrayobj.html#module-numba_dpex.dpnp_iface.arrayobj"><code class="xref">numba_dpex.dpnp_iface.arrayobj</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-3">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.dpnp_iface.dpnp_ufunc_db.html#module-numba_dpex.dpnp_iface.dpnp_ufunc_db"><code class="xref">numba_dpex.dpnp_iface.dpnp_ufunc_db</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-3">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.dpnp_iface.dpnpimpl.html#module-numba_dpex.dpnp_iface.dpnpimpl"><code class="xref">numba_dpex.dpnp_iface.dpnpimpl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-n"><td></td><td>
-       <strong>n</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.html#module-numba_dpex"><code class="xref">numba_dpex</code></a></td><td>
-       <em></em></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-4" style="display: none" alt="-" /></td>
-       <td>
-       <a href="apidoc/numba_dpex.numba_patches.html#module-numba_dpex.numba_patches"><code class="xref">numba_dpex.numba_patches</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-4">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.numba_patches.patch_arrayexpr_tree_to_ir.html#module-numba_dpex.numba_patches.patch_arrayexpr_tree_to_ir"><code class="xref">numba_dpex.numba_patches.patch_arrayexpr_tree_to_ir</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-4">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.numba_patches.patch_is_ufunc.html#module-numba_dpex.numba_patches.patch_is_ufunc"><code class="xref">numba_dpex.numba_patches.patch_is_ufunc</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-4">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.numba_patches.patch_mk_alloc.html#module-numba_dpex.numba_patches.patch_mk_alloc"><code class="xref">numba_dpex.numba_patches.patch_mk_alloc</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-o"><td></td><td>
-       <strong>o</strong></td><td></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-5" style="display: none" alt="-" /></td>
-       <td>
-       <a href="apidoc/numba_dpex.ocl.html#module-numba_dpex.ocl"><code class="xref">numba_dpex.ocl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.atomics.html#module-numba_dpex.ocl.atomics"><code class="xref">numba_dpex.ocl.atomics</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.atomics.atomic_helper.html#module-numba_dpex.ocl.atomics.atomic_helper"><code class="xref">numba_dpex.ocl.atomics.atomic_helper</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.mathdecl.html#module-numba_dpex.ocl.mathdecl"><code class="xref">numba_dpex.ocl.mathdecl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.mathimpl.html#module-numba_dpex.ocl.mathimpl"><code class="xref">numba_dpex.ocl.mathimpl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.ocldecl.html#module-numba_dpex.ocl.ocldecl"><code class="xref">numba_dpex.ocl.ocldecl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.oclimpl.html#module-numba_dpex.ocl.oclimpl"><code class="xref">numba_dpex.ocl.oclimpl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-5">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.ocl.stubs.html#module-numba_dpex.ocl.stubs"><code class="xref">numba_dpex.ocl.stubs</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-p"><td></td><td>
-       <strong>p</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.parfor_diagnostics.html#module-numba_dpex.parfor_diagnostics"><code class="xref">numba_dpex.parfor_diagnostics</code></a></td><td>
-       <em></em></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.printimpl.html#module-numba_dpex.printimpl"><code class="xref">numba_dpex.printimpl</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-s"><td></td><td>
-       <strong>s</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.spirv_generator.html#module-numba_dpex.spirv_generator"><code class="xref">numba_dpex.spirv_generator</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-u"><td></td><td>
-       <strong>u</strong></td><td></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-6" style="display: none" alt="-" /></td>
-       <td>
-       <a href="apidoc/numba_dpex.utils.html#module-numba_dpex.utils"><code class="xref">numba_dpex.utils</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-6">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.utils.array_utils.html#module-numba_dpex.utils.array_utils"><code class="xref">numba_dpex.utils.array_utils</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-6">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.utils.constants.html#module-numba_dpex.utils.constants"><code class="xref">numba_dpex.utils.constants</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-6">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="apidoc/numba_dpex.utils.llvm_codegen_helpers.html#module-numba_dpex.utils.llvm_codegen_helpers"><code class="xref">numba_dpex.utils.llvm_codegen_helpers</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-v"><td></td><td>
-       <strong>v</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="apidoc/numba_dpex.vectorizers.html#module-numba_dpex.vectorizers"><code class="xref">numba_dpex.vectorizers</code></a></td><td>
-       <em></em></td></tr>
-   </table>
-
-
-           </div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
           </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021-2023 Intel Corporation.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+        <article role="main" id="furo-main-content">
+          
+<section class="domainindex-section">
+  <h1>Python Module Index</h1>
+  <div class="domainindex-jumpbox"><a href="#cap-n"><strong>n</strong></a></div>
+</section>
+<table class="domainindex-table">
+  <tr class="pcap">
+    <td></td><td>&#160;</td><td></td>
+  </tr>
+  <tr class="cap" id="cap-n">
+    <td></td><td><strong>n</strong></td><td></td>
+  </tr>
+  <tr>
+    <td><img src="_static/minus.png" class="toggler"
+              id="toggle-1" style="display: none" alt="-" /></td>
+    <td>
+        <a href="index.html#module-numba_dpex"><code class="xref">numba_dpex</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/index.html#module-numba_dpex.core"><code class="xref">numba_dpex.core</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/boxing/index.html#module-numba_dpex.core.boxing"><code class="xref">numba_dpex.core.boxing</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/datamodel/index.html#module-numba_dpex.core.datamodel"><code class="xref">numba_dpex.core.datamodel</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/overloads/index.html#module-numba_dpex.core.overloads"><code class="xref">numba_dpex.core.overloads</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/parfors/index.html#module-numba_dpex.core.parfors"><code class="xref">numba_dpex.core.parfors</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/parfors/kernel_templates/index.html#module-numba_dpex.core.parfors.kernel_templates"><code class="xref">numba_dpex.core.parfors.kernel_templates</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/passes/index.html#module-numba_dpex.core.passes"><code class="xref">numba_dpex.core.passes</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/pipelines/index.html#module-numba_dpex.core.pipelines"><code class="xref">numba_dpex.core.pipelines</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/runtime/index.html#module-numba_dpex.core.runtime"><code class="xref">numba_dpex.core.runtime</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/targets/index.html#module-numba_dpex.core.targets"><code class="xref">numba_dpex.core.targets</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/types/index.html#module-numba_dpex.core.types"><code class="xref">numba_dpex.core.types</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/types/kernel_api/index.html#module-numba_dpex.core.types.kernel_api"><code class="xref">numba_dpex.core.types.kernel_api</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/typing/index.html#module-numba_dpex.core.typing"><code class="xref">numba_dpex.core.typing</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/core/utils/index.html#module-numba_dpex.core.utils"><code class="xref">numba_dpex.core.utils</code></a></td><td>
+    <em></em></td>
+  </tr>
+  <tr class="cg-1">
+    <td></td>
+    <td>&#160;&#160;&#160;
+        <a href="autoapi/numba_dpex/kernel_api/index.html#module-numba_dpex.kernel_api"><code class="xref">numba_dpex.kernel_api</code></a></td><td>
+    <em></em></td>
+  </tr>
+</table>
 
-</body>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2024, Intel Corporation
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              <a class="muted-link " href="https://github.com/IntelPython/numba-dpex" aria-label="GitHub"></a>
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=f8e9816f"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    </body>
 </html>
