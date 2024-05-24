@@ -89,7 +89,7 @@ set(SOURCES ${DPEXRT_SOURCES} ${KERNEL_SOURCES})
 link_directories(${DPCTL_LIBRARY_PATH})
 
 # Output static library, *.so or *.dll
-python_add_library(${PROJECT_NAME} MODULE ${SOURCES})
+python_add_library(${PROJECT_NAME} MODULE WITH_OABI ${SOURCES})
 
 # Add SYCL to target, this must come after python_add_library()
 add_sycl_to_target(TARGET ${PROJECT_NAME} SOURCES ${KERNEL_SOURCES})
